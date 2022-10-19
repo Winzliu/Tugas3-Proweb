@@ -6,28 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Bootsrap-5.1.3/css/bootstrap.css" />
     <link rel="stylesheet" href="Bootsrap-5.1.3/css/bootstrap.css.map" />
+    <link rel="stylesheet" href="Bootsrap-5.1.3/css/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>New Product</title>
   </head>
-  <body>
+  <body class="text-danger" style="font-family: 'Denk One', sans-serif; background-color: rgba(0, 0, 0);">
     <!-- navbar -->
-    <nav class="container navbar navbar-expand-lg navbar-light">
+    <nav class="fixed-top bg-black fs-4 navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
+        <a class="ms-5 text-danger navbar-brand" href="#"
           ><img
             width="100px"
-            class="rounded-circle"
-            src="image/BG-screen-3.jpg"
+            class="rounded-circle logo"
+            src="image/Logo.png"
             alt=""
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler bg-danger"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -39,70 +37,105 @@
         </button>
         <div class="end collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 me-5 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="me-2 nav-item">
+              <a class="text-danger nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="me-2 nav-item">
+              <a class="nav-link active text-danger" href="#">About</a>
+            </li>
+            <li class="me-2 nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle active"
+                class="text-danger nav-link dropdown-toggle active"
                 href="#"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Tutorial
+                Product
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">HTML</a></li>
-                <li><a class="dropdown-item" href="#">CSS</a></li>
+              <ul class="dropdown-menu text-danger bg-dark " aria-labelledby="navbarDropdown">
+                <li><a class="text-danger dropdown-item" href="#">Marvo Keyboard K800</a></li>
+                <li><a class="text-danger dropdown-item" href="#">Marvo Mouse M319</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">JavaScript</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">PHP</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">MySQL</a>
+                  <a class="text-danger dropdown-item" href="#">Marvo Scorpion MG010</a>
                 </li>
               </ul>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Profil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Hubungi</a>
+              <li class="me-2 nav-item">
+                <a class="nav-link active text-danger" href="#">Contact</a>
               </li>
             </li>
           </ul>
-          <button class="btn btn-outline-success me-2" type="submit">
-            Daftar
+          <button class="btn btn-outline-danger me-2 fs-5" type="submit">
+            Sign Up
           </button>
-          <button class="btn btn-primary" type="Masuk">Masuk</button>
+          <button class="btn btn-danger fs-5" type="Masuk">Sign In</button>
         </div>
       </div>
     </nav>
 
     <!-- header -->
-    <header class="mt-5">
+    <header class="mt-6" style="font-family: 'Permanent Marker', cursive;">
       <div class="container-xl">
-        <div class="row d-flex" style="font-family: 'Denk One', sans-serif">
+        <div class="row d-flex">
           <div class="col-xl m-auto text-center">
-            <h1 class="text-start">Hai! <br />Selamat datang di WinzHub</h1>
-            <h3 class="text-start">Halo gesssss, whatsappp!!!</h3>
-            <a href="#" class="btn btn-danger mb-5" role="button"
-              >Mulai sekarang</a
+            <h1 class="ts mb-3">Welcome!!</h1>
+            <h2 class="ts mb-3">Marvo's New Product</h2>
+            <h4 class="ts my-5">Born for Gaming | Scorpion</h4>
+            <a href="#" class="buy btn btn-danger text-black my-5 fs-4 w-25" role="button"
+              >Buy Now</a
             >
           </div>
           <div class="col-xl d-none d-xl-block">
             <img
               class="img-fluid rounded-3"
-              src="image/BG-screen-1.jpg"
+              width="700px"
+              src="image/Hero-Image.png"
               alt="hero image"
             />
           </div>
         </div>
       </div>
     </header>
-    <script src="Bootsrap-5.1.3/js/bootstrap.bundle.js"></script>
+
+    <!-- card -->
+    <div class="card-header countainer mt-6 mb-10 d-flex justify-content-evenly flex-wrap">
+    <div class="card c bg-transparent" style=" width: 18rem; height: 20rem;">
+      <img height="300px" src="image/Keyboard.png" class="bg-transparent card-img-top gambar" alt="Marvo Keyboard K800">
+      <div class="card-body d-flex flex-column justify-content-end animasi">
+        <h5 class="card-title">Marvo Keyboard K800</h5>
+        <p class="card-text">Description : <br>- 104 keys <br>- Usb 2.0 <br>- 5 millions click</p>
+        <h5>$.20,00</h5>
+        <a href="#" class="btn btn-danger text-black">Buy Now!</a>
+      </div>
+    </div>
+
+    <div class="card c bg-transparent" style="width: 18rem; height: 20rem;">
+      <img src="image/Mouse.png" class="card-img-top bg-transparent gambar" alt="Marvo Mouse M319">
+      <div class="card-body d-flex flex-column justify-content-end animasi">
+        <h5 class="card-title">Marvo Mouse M319</h5>
+        <p class="card-text">Description : <br>- DPI: 800-1200-1600-2400 <br>- Usb 2.0 <br>- 1.8m Cable length</p>
+        <h5>$.15,00</h5>
+        <a href="#" class="btn btn-danger text-black">Buy Now!</a>
+      </div>
+    </div>
+
+    <div class="card bg-transparent" style="width: 18rem; height: 20rem;">
+      <img src="image/Mousepad.png" class="card-img-top bg-transparent gambar" alt="Marvo Scorpion MG010">
+      <div class="card-body d-flex flex-column justify-content-end animasi">
+        <h5 class="card-title">Marvo Scorpion MG010</h5>
+        <p class="card-text">Description : <br>- 7-color RGB effect  <br>- Usb 3.0 <br>- 2m cable lenght</p>
+        <h5>$.18,00</h5>
+        <a href="#" class="btn btn-danger text-black">Buy Now!</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="text-center text-danger mb-5">
+    <h3 >Copyright &copy; 2022, AlwinLiufandy</h3>
+    <h3>Source/Product : Marvo-Tech</h3>
+  </footer>
+  <script src="Bootsrap-5.1.3/js/bootstrap.bundle.js"></script>
   </body>
 </html>

@@ -1,0 +1,95 @@
+@media screen and (min-width: 1200px) {
+  .navbar {
+    background-color: transparent !important;
+  }
+  .logo {
+    width: 100px !important;
+  }
+  .ts {
+    text-align: left;
+  }
+  .gambar:hover ~ .animasi {
+    transform: scale(1);
+    background-color: rgb(41, 41, 41);
+  }
+
+  .animasi:hover {
+    transform: scale(1);
+    background-color: rgb(41, 41, 41);
+  }
+
+  .gambar {
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    transform: scale(1);
+  }
+
+  .gambar:hover {
+    transform: scale(1.5);
+  }
+
+  .animasi {
+    transform: scale(0);
+    transition: 0.5s;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .navbar {
+    background-color: black;
+  }
+  .logo {
+    width: 70px;
+  }
+  .buy {
+    width: 40% !important;
+    color: black;
+  }
+  .card-header {
+    display: block;
+    height: 120rem;
+    margin-bottom: 20px !important;
+  }
+  .c {
+    height: 10rem;
+  }
+  .gambar {
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    transform: scale(1);
+  }
+
+  .gambar:hover {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (min-width: 625px) {
+  .card-header {
+    height: 80rem;
+  }
+  .gambar {
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    transform: scale(1);
+  }
+
+  .gambar:hover {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (min-width: 913px) {
+  .card-header {
+    height: 40rem;
+  }
+  .gambar {
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    transform: scale(1);
+  }
+
+  .gambar:hover {
+    transform: scale(1.5);
+  }
+}
