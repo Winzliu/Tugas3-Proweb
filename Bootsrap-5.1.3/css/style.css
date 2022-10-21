@@ -1,9 +1,27 @@
 @media screen and (min-width: 1200px) {
+  @keyframes hero-animation {
+    0% {
+      transform: rotate(3deg);
+    }
+    50% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(3deg);
+    }
+  }
   .navbar {
     background-color: transparent !important;
+    height: 4em;
   }
   .logo {
     width: 100px !important;
+  }
+  .hero {
+    animation: hero-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
   }
   .ts {
     text-align: left;
